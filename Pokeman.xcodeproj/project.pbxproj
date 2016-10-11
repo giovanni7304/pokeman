@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		860255D61DAB3B26008FFC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860255D51DAB3B26008FFC89 /* AppDelegate.swift */; };
-		860255D81DAB3B26008FFC89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860255D71DAB3B26008FFC89 /* ViewController.swift */; };
+		860255D81DAB3B26008FFC89 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860255D71DAB3B26008FFC89 /* MapViewController.swift */; };
 		860255DB1DAB3B26008FFC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860255D91DAB3B26008FFC89 /* Main.storyboard */; };
 		860255DE1DAB3B26008FFC89 /* Pokeman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 860255DC1DAB3B26008FFC89 /* Pokeman.xcdatamodeld */; };
 		860255E01DAB3B26008FFC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860255DF1DAB3B26008FFC89 /* Assets.xcassets */; };
 		860255E31DAB3B26008FFC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860255E11DAB3B26008FFC89 /* LaunchScreen.storyboard */; };
+		860255EC1DAD5C00008FFC89 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860255EB1DAD5C00008FFC89 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		860255D21DAB3B26008FFC89 /* Pokeman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokeman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		860255D51DAB3B26008FFC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		860255D71DAB3B26008FFC89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		860255D71DAB3B26008FFC89 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		860255DA1DAB3B26008FFC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		860255DD1DAB3B26008FFC89 /* Pokeman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pokeman.xcdatamodel; sourceTree = "<group>"; };
 		860255DF1DAB3B26008FFC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		860255E21DAB3B26008FFC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		860255E41DAB3B26008FFC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		860255EB1DAD5C00008FFC89 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860255EC1DAD5C00008FFC89 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				860255D41DAB3B26008FFC89 /* Pokeman */,
 				860255D31DAB3B26008FFC89 /* Products */,
+				860255EA1DAD5C00008FFC89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				860255D51DAB3B26008FFC89 /* AppDelegate.swift */,
-				860255D71DAB3B26008FFC89 /* ViewController.swift */,
+				860255D71DAB3B26008FFC89 /* MapViewController.swift */,
 				860255D91DAB3B26008FFC89 /* Main.storyboard */,
 				860255DF1DAB3B26008FFC89 /* Assets.xcassets */,
 				860255E11DAB3B26008FFC89 /* LaunchScreen.storyboard */,
@@ -65,6 +69,14 @@
 				860255DC1DAB3B26008FFC89 /* Pokeman.xcdatamodeld */,
 			);
 			path = Pokeman;
+			sourceTree = "<group>";
+		};
+		860255EA1DAD5C00008FFC89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				860255EB1DAD5C00008FFC89 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				860255D81DAB3B26008FFC89 /* ViewController.swift in Sources */,
+				860255D81DAB3B26008FFC89 /* MapViewController.swift in Sources */,
 				860255D61DAB3B26008FFC89 /* AppDelegate.swift in Sources */,
 				860255DE1DAB3B26008FFC89 /* Pokeman.xcdatamodeld in Sources */,
 			);
@@ -306,6 +318,7 @@
 				860255E91DAB3B26008FFC89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
