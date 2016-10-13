@@ -14,6 +14,8 @@
 		860255E01DAB3B26008FFC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860255DF1DAB3B26008FFC89 /* Assets.xcassets */; };
 		860255E31DAB3B26008FFC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860255E11DAB3B26008FFC89 /* LaunchScreen.storyboard */; };
 		860255EC1DAD5C00008FFC89 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860255EB1DAD5C00008FFC89 /* MapKit.framework */; };
+		860255EE1DADC20F008FFC89 /* PokeDexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860255ED1DADC20F008FFC89 /* PokeDexViewController.swift */; };
+		860255F01DADC582008FFC89 /* CoreDataHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860255EF1DADC582008FFC89 /* CoreDataHelp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		860255E21DAB3B26008FFC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		860255E41DAB3B26008FFC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		860255EB1DAD5C00008FFC89 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		860255ED1DADC20F008FFC89 /* PokeDexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeDexViewController.swift; sourceTree = "<group>"; };
+		860255EF1DADC582008FFC89 /* CoreDataHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			children = (
 				860255D51DAB3B26008FFC89 /* AppDelegate.swift */,
 				860255D71DAB3B26008FFC89 /* MapViewController.swift */,
+				860255ED1DADC20F008FFC89 /* PokeDexViewController.swift */,
+				860255EF1DADC582008FFC89 /* CoreDataHelp.swift */,
 				860255D91DAB3B26008FFC89 /* Main.storyboard */,
 				860255DF1DAB3B26008FFC89 /* Assets.xcassets */,
 				860255E11DAB3B26008FFC89 /* LaunchScreen.storyboard */,
@@ -153,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				860255D81DAB3B26008FFC89 /* MapViewController.swift in Sources */,
+				860255EE1DADC20F008FFC89 /* PokeDexViewController.swift in Sources */,
 				860255D61DAB3B26008FFC89 /* AppDelegate.swift in Sources */,
+				860255F01DADC582008FFC89 /* CoreDataHelp.swift in Sources */,
 				860255DE1DAB3B26008FFC89 /* Pokeman.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,22 +19,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kHT-sL-oxg"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-uQ-AWT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-uQ-AWT">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Xp7-5D-0Gk"/>
                                     <constraint firstAttribute="height" constant="50" id="r6Y-C6-yPR"/>
                                 </constraints>
-                                <state key="normal" title="Compass"/>
+                                <state key="normal" image="compass"/>
                                 <connections>
                                     <action selector="centerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFQ-ux-9Dj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFs-7l-vhA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFs-7l-vhA">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="QHV-TH-5CJ"/>
                                     <constraint firstAttribute="height" constant="50" id="g7E-FP-OJ0"/>
                                 </constraints>
-                                <state key="normal" title="PokeBall"/>
+                                <state key="normal" image="pokeball"/>
                                 <connections>
                                     <segue destination="zSS-W7-ZQf" kind="presentation" id="aJ6-Xa-ik2"/>
                                 </connections>
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-95" y="-208"/>
         </scene>
-        <!--View Controller-->
+        <!--Poke Dex View Controller-->
         <scene sceneID="92c-qC-7fL">
             <objects>
-                <viewController id="zSS-W7-ZQf" sceneMemberID="viewController">
+                <viewController id="zSS-W7-ZQf" customClass="PokeDexViewController" customModule="Pokeman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="27b-je-aXR"/>
                         <viewControllerLayoutGuide type="bottom" id="PQN-If-wKQ"/>
@@ -75,12 +75,15 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xyY-FU-eQx">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-dy-6Vs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-dy-6Vs">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="3He-qK-kQW"/>
                                     <constraint firstAttribute="height" constant="50" id="7Lj-Bn-FOS"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="map"/>
+                                <connections>
+                                    <action selector="mapTapped:" destination="zSS-W7-ZQf" eventType="touchUpInside" id="rpl-o6-NUX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,10 +96,18 @@
                             <constraint firstItem="PQN-If-wKQ" firstAttribute="top" secondItem="6wK-dy-6Vs" secondAttribute="bottom" constant="20" id="zgo-LG-IVG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="xyY-FU-eQx" id="9o8-kn-XRI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nia-ze-rkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="-208"/>
+            <point key="canvasLocation" x="703" y="-208"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="compass" width="512" height="512"/>
+        <image name="map" width="512" height="512"/>
+        <image name="pokeball" width="512" height="512"/>
+    </resources>
 </document>
