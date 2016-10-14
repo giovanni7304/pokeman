@@ -36,7 +36,7 @@
                                 </constraints>
                                 <state key="normal" image="pokeball"/>
                                 <connections>
-                                    <segue destination="zSS-W7-ZQf" kind="presentation" id="aJ6-Xa-ik2"/>
+                                    <segue destination="zSS-W7-ZQf" kind="presentation" id="Jla-SY-SGF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -102,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nia-ze-rkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="703" y="-208"/>
+            <point key="canvasLocation" x="392" y="-209"/>
         </scene>
     </scenes>
     <resources>

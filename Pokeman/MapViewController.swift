@@ -16,12 +16,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     let stdRadius = 200 as CLLocationDistance
     var manager = CLLocationManager()
+    var pokemons : [Pokeman] = []
+    
     var updateCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
+        pokemons = getAllPokemon()
+        
         manager.delegate = self
         
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
@@ -34,8 +38,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                     if let coord = self.manager.location?.coordinate {
                         let anotate = MKPointAnnotation()
                         anotate.coordinate = coord
-                        let randoLat = (Double(arc4random_uniform(200)) - 100.0) / 50000.0
-                        let randoLon = (Double(arc4random_uniform(200)) - 100.0) / 50000.0
+                        let randoLat = (Double(arc4random_uniform(200)) - 100.0) / 100000.0
+                        let randoLon = (Double(arc4random_uniform(200)) - 100.0) / 100000.0
                         anotate.coordinate.latitude += randoLat
                         anotate.coordinate.longitude += randoLon
                         self.mapView.addAnnotation(anotate)
