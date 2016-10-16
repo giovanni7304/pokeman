@@ -16,6 +16,7 @@
 		860255EC1DAD5C00008FFC89 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860255EB1DAD5C00008FFC89 /* MapKit.framework */; };
 		860255EE1DADC20F008FFC89 /* PokeDexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860255ED1DADC20F008FFC89 /* PokeDexViewController.swift */; };
 		860255F01DADC582008FFC89 /* CoreDataHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860255EF1DADC582008FFC89 /* CoreDataHelp.swift */; };
+		862FFC6B1DB3A069004A29AD /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862FFC6A1DB3A069004A29AD /* PokeAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		860255EB1DAD5C00008FFC89 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		860255ED1DADC20F008FFC89 /* PokeDexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeDexViewController.swift; sourceTree = "<group>"; };
 		860255EF1DADC582008FFC89 /* CoreDataHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelp.swift; sourceTree = "<group>"; };
+		862FFC6A1DB3A069004A29AD /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				860255E11DAB3B26008FFC89 /* LaunchScreen.storyboard */,
 				860255E41DAB3B26008FFC89 /* Info.plist */,
 				860255DC1DAB3B26008FFC89 /* Pokeman.xcdatamodeld */,
+				862FFC6A1DB3A069004A29AD /* PokeAnnotation.swift */,
 			);
 			path = Pokeman;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860255D81DAB3B26008FFC89 /* MapViewController.swift in Sources */,
+				862FFC6B1DB3A069004A29AD /* PokeAnnotation.swift in Sources */,
 				860255EE1DADC20F008FFC89 /* PokeDexViewController.swift in Sources */,
 				860255D61DAB3B26008FFC89 /* AppDelegate.swift in Sources */,
 				860255F01DADC582008FFC89 /* CoreDataHelp.swift in Sources */,

@@ -14,7 +14,7 @@ func addAllPokemon() {
     createPokemon(name: "Mew", imageName: "mew")
     createPokemon(name: "Meowth", imageName: "meowth")
     createPokemon(name: "Mankey", imageName: "mankey")
-    createPokemon(name: "Pidgey", imageName: "pidkey")
+    createPokemon(name: "Pidgey", imageName: "pidgey")
     createPokemon(name: "Pikachu", imageName: "pikachu-2")
     createPokemon(name: "Rattata", imageName: "rattata")
     createPokemon(name: "Eevee", imageName: "eevee")
@@ -50,6 +50,38 @@ func getAllPokemon() -> [Pokeman] {
             print("built pokemon array\n")
             return pokemons
         }
+        
+    } catch {}
+    
+    return []
+}
+
+func getAllCaughtPokemons() -> [Pokeman] {
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    let fetchRequest = Pokeman.fetchRequest() as NSFetchRequest<Pokeman>
+    fetchRequest.predicate = NSPredicate(format: "caught == %@", true as CVarArg)
+    
+    do {
+        let pokemons = try context.fetch(fetchRequest) as [Pokeman]
+        return pokemons
+        
+    } catch {}
+    
+    return []
+}
+
+
+func getAllUnCaughtPokemons() -> [Pokeman] {
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    let fetchRequest = Pokeman.fetchRequest() as NSFetchRequest<Pokeman>
+    fetchRequest.predicate = NSPredicate(format: "caught == %@", false as CVarArg)
+    
+    do {
+        let pokemons = try context.fetch(fetchRequest) as [Pokeman]
+        return pokemons
         
     } catch {}
     
